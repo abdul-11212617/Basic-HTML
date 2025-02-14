@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #9b5656;
+        }
+
+        .main{
+            margin: 10%;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #ffcc00;
+            position: relative;
+            animation: move 5s infinite;
+            animation-direction: alternate;
+        }
+
+        .main2{
+            margin: 10%;
+            margin-left : -5%;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #ffcc00;
+            position: relative;
+            animation: move 5s infinite;
+            animation-direction: alternate;
+        }
+
+        .main3{
+            margin: 10%;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #ffcc00;
+            position: relative;
+            animation: move 5s infinite;
+            animation-direction: alternate;
+        }
+
+        .main4{
+            margin: 10%;
+            margin-left: -5%;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #ffcc00;
+            position: relative;
+            animation: move 5s infinite;
+            animation-direction: alternate;}
+
+        @keyframes move{
+            0%{
+                left: 100px;
+                /* transform: position(0, 0); */
+                /* transform: translate(0, 0); */
+            }
+            25%{
+                right: 100px;
+                /* transform: position(25, 25); */
+                /* transform: position(25, 25); */
+            }
+            50%{
+                top: 100px;
+                /* transform: position(50, 50); */
+                /* transform: position(50, 50); */
+            }
+            75%{
+                bottom: 100px;
+                /* transform: position(75, 75); */
+                /* transform: position(75, 75); */
+            }
+            100%{
+                left: 100px;
+                /* transform: position(0, 0); */
+                /* transform: position(0, 0); */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main"></div>
+    <div class="main2"></div>
+    <div class="main3"></div>
+    <div class="main4"></div>
+    
+</body>
+</html>

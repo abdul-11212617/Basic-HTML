@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture hower</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #9b5656;
+        }
+
+        .main{
+            width: 200px;
+            height: 200px;
+            background-color: #ffcc00;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .main:hover img{
+            transform: scale(1.2);
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="main">
+        <img src="C:\Users\EASLY RAHMAN\Desktop\VS Code\HTML\Pisoft\jeremy-bishop-EwKXn5CapA4-unsplash.jpg" alt="img">
+        <img src="C:\Users\EASLY RAHMAN\Desktop\VS Code\HTML\Pisoft\massimiliano-morosinotto-Tw_VQuS3Xio-unsplash.jpg" alt="img">
+        <img src="C:\Users\EASLY RAHMAN\Desktop\VS Code\HTML\Pisoft\omkar-jadhav-urMbGaBBjbg-unsplash.jpg" alt="img">
+    </div>
+    
+</body>
+</html>
