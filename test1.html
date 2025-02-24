@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .circle{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            position: relative;
+         
+        }
+        .circle11 , .circle22 {
+            height: 100px;
+            width: 250px;
+            border: 2px solid rgb(197, 149, 28);
+        }
+        
+        .circle1 , .circle2 , .circle3 , .circle4{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(197, 149, 28);
+            display: flex;
+            animation: 1s move ease-in-out linear infinite;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+
+
+        .circle1{
+             top : 250px;
+            left : 350px;
+        }
+        .circle2{
+            top : 350px;
+            left : 275px;
+        }
+        .circle3{
+            top : 350px;
+            left : 350px;
+        }
+        .circle4{
+            top : 450px;
+            left : 275px;
+        }
+
+        @keyframe move{
+            0%{
+                tranform: rotateX(360deg);
+            }
+            100%{
+                tranform: rotate(0deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="circle11">
+            <div class="circle1" style="background-color: rgb(197, 149, 28);">1</div>
+            <div class="circle2" style="background-color: rgb(197, 149, 28);" >2</div>
+        </div>
+        <div class="circle22">
+            <div class="circle3" style="background-color: rgb(197, 149, 28);">3</div>
+            <div class="circle4" style="background-color: rgb(197, 149, 28);">4</div>     
+        </div>
+        
+       
+    </div>
+</body>
+</html>
